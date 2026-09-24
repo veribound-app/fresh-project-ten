@@ -1,7 +1,6 @@
-import { useState } from "react";
-import  DisputeTable from "./components/DisputeTable";
-import { isHighRisk } from "./lib/riskEngine";
-
+import React from "react";
+import DisputeTable from "./components/DisputeTable";
+import "./App.css"
 function App() {
   const [email] = useState("test@example.com");
   const [amount] = useState(500);
