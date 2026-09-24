@@ -1,18 +1,20 @@
-import { useState, useEffect } from 'react'
-import { supabase } from '../lib/supabase'
+// src/components/DisputeTable.jsx
+import React from 'react';
+import { useDisputes } from '../hooks/useDisputes';
 
-export function useDisputes() {
-  const [disputes, setDisputes] = useState([])
-  const [loading, setLoading] = useState(true)
+export function DisputeTable() {
+  const { disputes, loading, error, refetch } = useDisputes();
 
-  useEffect(() => {
-    async function load() {
-      const { data } = await supabase.from('disputes').select('*')
-      if (data) setDisputes(data)
-      setLoading(false)
+  const getChannelBadge = (channel) => {
+    const ch = (channel || 'whatsapp').toLowerCase();
+    switch (ch) {
+      case 'whatsapp':
+        return 'bg-green-100 text-green-800';
+      default:
+        return 'bg-gray-100 text-gray-800';
     }
-    load()
-  }, [])
+  };
 
-  return { disputes, loading }
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error.message}</div>;
 }

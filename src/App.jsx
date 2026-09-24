@@ -1,8 +1,8 @@
 import React from 'react';
-import { DisputeTable } from './components/DisputeTable';
+import  DisputeTable from "./components/DisputeTable"
 import { DeepScanInspector } from './components/DeepScanInspector';
 
-export default function App() {
+
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* Uganda Telecom Pitch Header */}
@@ -47,7 +47,7 @@ export default function App() {
             <span className="text-xs text-yellow-700 font-medium">Goal achieved for Q3</span>
           </div>
         </div>
-
+<DisputeTable />
         {/* Side-by-Side Layout for Table and Deep Scan */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
           
