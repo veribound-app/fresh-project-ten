@@ -1,6 +1,6 @@
 // src/components/DisputeTable.jsx
-import React from 'react';
-import { useDisputes } from '../hooks/useDisputes';
+import { useDisputes } 
+import { useDisputes } from "../hooks/useDisputes ";
 
 export function DisputeTable() {
   const { disputes, loading, error, refetch } = useDisputes();
