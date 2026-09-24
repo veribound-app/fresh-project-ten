@@ -1,5 +1,5 @@
 import { useState } from "react";
-import DisputeTable from "./components/DisputeTable";
+import  DisputeTable from "./components/DisputeTable";
 import { isHighRisk } from "./lib/riskEngine";
 
 function App() {
