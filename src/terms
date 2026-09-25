@@ -1,0 +1,10 @@
+export default function Terms(){
+return (<div style={{padding:20,maxWidth:800,margin:"auto"}}>
+<h1>Terms of Use</h1>
+<p>1. This platform is for reporting suspected scam phone numbers in Uganda for public safety.</p>
+<p>2. Do not report false numbers to harm others. False reporting violates Uganda Computer Misuse Act.</p>
+<p>3. Reports are public warnings, not legal judgments. Verify before action.</p>
+<p>4. Dispute: If your number is listed wrongly, use Dispute form for review within 72 hours.</p>
+<p>5. Legal Evidence: Each report gets SHA-256 hash timestamp for potential police use.</p>
+</div>)
+}
